@@ -1,0 +1,60 @@
+{
+    "login": {
+        "url": "http://192.168.72.235/api/v1/method.callAnon/login",
+        "payload": "{\"message\":\"{\\\"msg\\\":\\\"method\\\",\\\"id\\\":\\\"19\\\",\\\"method\\\":\\\"login\\\",\\\"params\\\":[{\\\"user\\\":{\\\"username\\\":\\\"yangzijian\\\"},\\\"password\\\":{\\\"digest\\\":\\\"312433c28349f63c4f387953ff337046e794bea0f9b9ebfcb08e90046ded9c76\\\",\\\"algorithm\\\":\\\"sha-256\\\"}}]}\"}",
+        "headers": {
+            "Content-Type": "application/json",
+            "cache-contro": "no-cache",
+            "Postman-Token": "b454fd09-c6cb-409c-8422-119bc5ce84dc"
+        }
+    },
+    "loadHistory": {
+        "url": "http://192.168.72.235/api/v1/method.call/loadHistory",
+        "payload": "{\"message\":\"{\\\"msg\\\":\\\"method\\\",\\\"id\\\":\\\"36\\\",\\\"method\\\":\\\"loadHistory\\\",\\\"params\\\":[\\\"8mRitfQTLqL3kJSunWnirorucaKfJgntam\\\",null,50,{\\\"$date\\\":1634605172011},false]}\"}",
+        "headers": {
+            "Content-Type": "application/json",
+            "Cookie": "rc_uid=WnirorucaKfJgntam; rc_token=vSr9QuUCBLGG3w_ez8L_OImyQXzWuDhk6f7t5NLA_G8",
+            "X-Auth-Token": "vSr9QuUCBLGG3w_ez8L_OImyQXzWuDhk6f7t5NLA_G8",
+            "X-Requested-With": "XMLHttpRequest",
+            "X-User-Id": "WnirorucaKfJgntam",
+            "cache-control": "no-cache",
+            "Postman-Token": "dd5efa08-ad3c-438d-888b-497309a85048"
+        }
+    },
+    "search": {
+        "url": "http://192.168.72.235/api/v1/method.call/rocketchatSearch.search",
+        "payload": "{\"message\":\"{\\\"msg\\\":\\\"method\\\",\\\"id\\\":\\\"50\\\",\\\"method\\\":\\\"rocketchatSearch.search\\\",\\\"params\\\":[\\\"发生的\\\",{\\\"rid\\\":\\\"GENERAL\\\",\\\"uid\\\":\\\"WnirorucaKfJgntam\\\"},{\\\"searchAll\\\":false}]}\"}",
+        "headers": {
+            "Content-Type": "application/json",
+            "X-Auth-Token": "vSr9QuUCBLGG3w_ez8L_OImyQXzWuDhk6f7t5NLA_G8",
+            "X-Requested-With": "XMLHttpRequest",
+            "X-User-Id": "WnirorucaKfJgntam",
+            "cache-control": "no-cache",
+            "Postman-Token": "5f23c04c-1393-4e80-9cf8-f955619f4a7f"
+        }
+    },
+    "sendMessage": {
+        "url": "http://192.168.72.235/api/v1/method.call/sendMessage",
+        "payload": "{\"message\":\"{\\\"msg\\\":\\\"method\\\",\\\"id\\\":\\\"88\\\",\\\"method\\\":\\\"sendMessage\\\",\\\"params\\\":[{\\\"_id\\\":\\\"20211105185642\\\",\\\"rid\\\":\\\"WnirorucaKfJgntampYhsRfC4rwWT68axS\\\",\\\"msg\\\":\\\"测试1996\\\"}]}\"}",
+        "headers": {
+            "Content-Type": "application/json",
+            "X-Auth-Token": "vSr9QuUCBLGG3w_ez8L_OImyQXzWuDhk6f7t5NLA_G8",
+            "X-Requested-With": "XMLHttpRequest",
+            "X-User-Id": "WnirorucaKfJgntam",
+            "cache-control": "no-cache",
+            "Postman-Token": "b2c3fa0c-eba4-400c-8699-6a0a8816cde7"
+        }
+    },
+    "sendMessage_image": {
+        "url": "http://192.168.72.235/api/v1/rooms.upload/GENERAL",
+        "payload": "------WebKitFormBoundarycBDKhvWzfs6vxeFF\r\nContent-Disposition: form-data; name=\"description\"\r\n\r\nCES\r\n------WebKitFormBoundarycBDKhvWzfs6vxeFF\r\nContent-Disposition: form-data; name=\"file\"; filename=\"E:\\work_soft\\PyCharm\\PyCharm Community Edition 2017.2.4\\project\\wangguan\\wg_requests\\1.png\"\r\nContent-Type: image/png\r\n\r\n\r\n------WebKitFormBoundarycBDKhvWzfs6vxeFF--",
+        "headers": {
+            "Content-type": "multipart/form-data;boundary=----WebKitFormBoundarycBDKhvWzfs6vxeFF",
+            "X-Auth-Token": "vSr9QuUCBLGG3w_ez8L_OImyQXzWuDhk6f7t5NLA_G8",
+            "X-Requested-With": "XMLHttpRequest",
+            "X-User-Id": "WnirorucaKfJgntam",
+            "cache-control": "no-cache",
+            "Postman-Token": "a3333170-8d7d-4438-8de0-5e8ff75ee6fd"
+        }
+    }
+}
