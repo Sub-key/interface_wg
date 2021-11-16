@@ -1,0 +1,12 @@
+{
+    "login": {
+        "url": "http://192.168.72.235/api/v1/method.callAnon/login",
+        "payload": "{\"message\":\"{\\\"msg\\\":\\\"method\\\",\\\"id\\\":\\\"19\\\",\\\"method\\\":\\\"login\\\",\\\"params\\\":[{\\\"user\\\":{\\\"username\\\":\\\"yangzijian\\\"},\\\"password\\\":{\\\"digest\\\":\\\"312433c28349f63c4f387953ff337046e794bea0f9b9ebfcb08e90046ded9c76\\\",\\\"algorithm\\\":\\\"sha-256\\\"}}]}\"}",
+        "headers": {
+            "Content-Type": "application/json",
+            "cache-contro": "no-cache",
+            "Postman-Token": "b454fd09-c6cb-409c-8422-119bc5ce84dc"
+        }
+    }
+
+}
