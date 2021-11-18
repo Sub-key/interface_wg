@@ -35,7 +35,7 @@
     },
     "sendMessage": {
         "url": "http://192.168.72.235/api/v1/method.call/sendMessage",
-        "payload": "{\"message\":\"{\\\"msg\\\":\\\"method\\\",\\\"id\\\":\\\"88\\\",\\\"method\\\":\\\"sendMessage\\\",\\\"params\\\":[{\\\"_id\\\":\\\"20211118170513\\\",\\\"rid\\\":\\\"WnirorucaKfJgntampYhsRfC4rwWT68axS\\\",\\\"msg\\\":\\\"测试1996\\\"}]}\"}",
+        "payload": "{\"message\":\"{\\\"msg\\\":\\\"method\\\",\\\"id\\\":\\\"88\\\",\\\"method\\\":\\\"sendMessage\\\",\\\"params\\\":[{\\\"_id\\\":\\\"20211118173352\\\",\\\"rid\\\":\\\"WnirorucaKfJgntampYhsRfC4rwWT68axS\\\",\\\"msg\\\":\\\"测试1996\\\"}]}\"}",
         "headers": {
             "Content-Type": "application/json",
             "X-Auth-Token": "kuKIB-X_w0kmTC_XbQkit0xS3UBu-KRD3NVHlLJavP0",

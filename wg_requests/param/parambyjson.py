@@ -3,14 +3,26 @@
 import json
 # import os
 
+# import os
+# import sys
+# curPath = os.path.abspath(os.path.dirname(__file__)) #获取当前绝对路径
+# filePath = os.path.split(curPath)[0] #获取当前目录的上一级目录路径，将文件名和路径切割，然后只取路径
+# sys.path.append(curPath.split('xxxx')[0])#以xxxx来分割，且只取第一个，并把它追加到python系统模块中
+# rootPath = curPath.split('xxxx')[0]+"xxxx"#按xxxx分割后，取第一个后，在接上xxxx
+# sys.path.append(filePath)#sys.path是python的搜索模块的路径集
+# sys.path.append(rootPath)
+
+
 import os
 import sys
-curPath = os.path.abspath(os.path.dirname(__file__)) #获取当前绝对路径
-filePath = os.path.split(curPath)[0] #获取当前目录的上一级目录路径，将文件名和路径切割，然后只取路径
-sys.path.append(curPath.split('xxxx')[0])#以xxxx来分割，且只取第一个，并把它追加到python系统模块中
-rootPath = curPath.split('xxxx')[0]+"xxxx"#按xxxx分割后，取第一个后，在接上xxxx
-sys.path.append(filePath)#sys.path是python的搜索模块的路径集
-sys.path.append(rootPath)
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootpath=curPath
+syspath=sys.path
+sys.path=[]
+sys.path.append(rootpath)#将工程根目录加入到python搜索路径中
+sys.path.extend([rootpath+i for i in os.listdir(rootpath) if i[0]!="."])#将工程目录下的一级目录添加到python搜索路径中
+sys.path.extend(syspath)
+print(rootpath)
 
 import datetime
 
@@ -26,7 +38,7 @@ class OperationJson:
         if file_name:
             self.file_name=file_name
         else:
-            self.file_name=filePath+r'\param\api_interface_file\main_s.json'
+            self.file_name=rootpath+r'\api_interface_file\main_s.json'
             print(self.file_name)
         self.data = self.get_data()
 
