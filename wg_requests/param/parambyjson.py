@@ -1,7 +1,17 @@
 # coding=utf-8
 
 import json
+# import os
+
 import os
+import sys
+curPath = os.path.abspath(os.path.dirname(__file__)) #获取当前绝对路径
+filePath = os.path.split(curPath)[0] #获取当前目录的上一级目录路径，将文件名和路径切割，然后只取路径
+sys.path.append(curPath.split('xxxx')[0])#以xxxx来分割，且只取第一个，并把它追加到python系统模块中
+rootPath = curPath.split('xxxx')[0]+"xxxx"#按xxxx分割后，取第一个后，在接上xxxx
+sys.path.append(filePath)#sys.path是python的搜索模块的路径集
+sys.path.append(rootPath)
+
 import datetime
 
 class OperationJson:
@@ -16,7 +26,8 @@ class OperationJson:
         if file_name:
             self.file_name=file_name
         else:
-            self.file_name=r'E:\work_soft\PyCharm\PyCharm Community Edition 2017.2.4\project\wangguan\wg_requests\param\api_interface_file\main_s.json'
+            self.file_name=filePath+'\\param\\api_interface_file\\main_s.json'
+            # print(self.file_name)
         self.data = self.get_data()
 
     # 打开json文件，要加编码规则utf-8
