@@ -7128,32 +7128,49 @@
 </script>
 <script type="text/javascript">
     var resultData = {
-    "testPass": 3,
+    "testPass": 1,
     "testResult": [
         {
             "className": "TestMathFunc_one",
             "methodName": "test_one",
             "description": null,
-            "spendTime": "0.178 s",
+            "spendTime": "0.193 s",
             "status": "成功",
             "log": [
-                "{\"message\":\"{\\\"msg\\\":\\\"result\\\",\\\"id\\\":\\\"19\\\",\\\"result\\\":{\\\"id\\\":\\\"pYhsRfC4rwWT68axS\\\",\\\"token\\\":\\\"hbRO4SkJQeREHVYv-TPIFC8VtI8gVCDYYt5V45mq1op\\\",\\\"tokenExpires\\\":{\\\"$date\\\":1643874196592},\\\"type\\\":\\\"password\\\"}}\",\"success\":true}",
+                "{\"message\":\"{\\\"msg\\\":\\\"result\\\",\\\"id\\\":\\\"19\\\",\\\"result\\\":{\\\"id\\\":\\\"pYhsRfC4rwWT68axS\\\",\\\"token\\\":\\\"w-BM4L9EhMHyMnbHH2FxmlCnm7M8VFFNmy3r4Qn6GcE\\\",\\\"tokenExpires\\\":{\\\"$date\\\":1645000352419},\\\"type\\\":\\\"password\\\"}}\",\"success\":true}",
                 "True",
                 ""
             ]
         },
         {
             "className": "TestMathFunc_two",
-            "methodName": "test_four",
+            "methodName": "test_five",
             "description": null,
-            "spendTime": "0.0634 s",
+            "spendTime": "0.862 s",
             "status": "失败",
             "log": [
-                "{\"success\":false,\"error\":\"[invalid-field]\",\"errorType\":\"invalid-field\"}\nFalse\n",
+                "------WebKitFormBoundarycBDKhvWzfs6vxeFF\r\nContent-Disposition: form-data; name=\"description\"\r\n\r\nCES\r\n------WebKitFormBoundarycBDKhvWzfs6vxeFF\r\nContent-Disposition: form-data; name=\"file\"; filename=\"E:\\work_soft\\PyCharm\\PyCharm Community Edition 2017.2.4\\project\\wangguan\\wg_requests\\1.png\"\r\nContent-Type: image/png\r\n\r\n\r\n------WebKitFormBoundarycBDKhvWzfs6vxeFF--\n{\"status\":\"error\",\"message\":\"You must be logged in to do this.\"}\nNone\n",
                 "Traceback (most recent call last):\n",
                 "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
                 "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
-                "  File \"E:\\work_soft\\PyCharm\\PyCharm Community Edition 2017.2.4\\project\\wangguan\\wg_requests\\case_unittest\\test_case_by_json.py\", line 178, in test_four\n    self.assertEqual(True, final, '不通过')\n",
+                "  File \"E:\\work_soft\\PyCharm\\PyCharm Community Edition 2017.2.4\\project\\wangguan\\wg_requests\\case_unittest\\test_case_by_json.py\", line 182, in test_five\n    self.assertEqual(True, final, '不通过')\n",
+                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: True != False : 不通过\n"
+            ]
+        },
+        {
+            "className": "TestMathFunc_two",
+            "methodName": "test_four",
+            "description": null,
+            "spendTime": "0.765 s",
+            "status": "失败",
+            "log": [
+                "{\"status\":\"error\",\"message\":\"You must be logged in to do this.\"}\nNone\n",
+                "Traceback (most recent call last):\n",
+                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"E:\\work_soft\\PyCharm\\PyCharm Community Edition 2017.2.4\\project\\wangguan\\wg_requests\\case_unittest\\test_case_by_json.py\", line 157, in test_four\n    self.assertEqual(True, final, '不通过')\n",
                 "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
                 "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
                 "AssertionError: True != False : 不通过\n"
@@ -7163,32 +7180,42 @@
             "className": "TestMathFunc_two",
             "methodName": "test_seconds",
             "description": null,
-            "spendTime": "0.0769 s",
-            "status": "成功",
+            "spendTime": "0.825 s",
+            "status": "失败",
             "log": [
-                "{\"message\":\"{\\\"msg\\\":\\\"result\\\",\\\"id\\\":\\\"36\\\",\\\"result\\\":{\\\"messages\\\":[{\\\"_id\\\":\\\"E4S2KkZLg8ed9iKft\\\",\\\"t\\\":\\\"jitsi_call_started\\\",\\\"rid\\\":\\\"8mRitfQTLqL3kJSunWnirorucaKfJgntam\\\",\\\"ts\\\":{\\\"$date\\\":1634605172002},\\\"msg\\\":\\\"\\\",\\\"u\\\":{\\\"_id\\\":\\\"WnirorucaKfJgntam\\\",\\\"username\\\":\\\"liyi\\\",\\\"name\\\":\\\"李亦\\\"},\\\"groupable\\\":false,\\\"actionLinks\\\":[{\\\"icon\\\":\\\"icon-videocam\\\",\\\"label\\\":\\\"Click to Join!\\\",\\\"i18nLabel\\\":\\\"Click_to_join\\\",\\\"method_id\\\":\\\"joinJitsiCall\\\",\\\"params\\\":\\\"\\\"}],\\\"_updatedAt\\\":{\\\"$date\\\":1634605172002}},{\\\"_id\\\":\\\"hHE65W5Td56bCX4eY\\\",\\\"t\\\":\\\"jitsi_call_started\\\",\\\"rid\\\":\\\"8mRitfQTLqL3kJSunWnirorucaKfJgntam\\\",\\\"ts\\\":{\\\"$date\\\":1634564039923},\\\"msg\\\":\\\"\\\",\\\"u\\\":{\\\"_id\\\":\\\"WnirorucaKfJgntam\\\",\\\"username\\\":\\\"liyi\\\",\\\"name\\\":\\\"李亦\\\"},\\\"groupable\\\":false,\\\"actionLinks\\\":[{\\\"icon\\\":\\\"icon-videocam\\\",\\\"label\\\":\\\"Click to Join!\\\",\\\"i18nLabel\\\":\\\"Click_to_join\\\",\\\"method_id\\\":\\\"joinJitsiCall\\\",\\\"params\\\":\\\"\\\"}],\\\"_updatedAt\\\":{\\\"$date\\\":1634564039923}},{\\\"_id\\\":\\\"B2SwanDPQK9FbnHD3\\\",\\\"t\\\":\\\"jitsi_call_started\\\",\\\"rid\\\":\\\"8mRitfQTLqL3kJSunWnirorucaKfJgntam\\\",\\\"ts\\\":{\\\"$date\\\":1634563903280},\\\"msg\\\":\\\"\\\",\\\"u\\\":{\\\"_id\\\":\\\"WnirorucaKfJgntam\\\",\\\"username\\\":\\\"liyi\\\",\\\"name\\\":\\\"李亦\\\"},\\\"groupable\\\":false,\\\"actionLinks\\\":[{\\\"icon\\\":\\\"icon-videocam\\\",\\\"label\\\":\\\"Click to Join!\\\",\\\"i18nLabel\\\":\\\"Click_to_join\\\",\\\"method_id\\\":\\\"joinJitsiCall\\\",\\\"params\\\":\\\"\\\"}],\\\"_updatedAt\\\":{\\\"$date\\\":1634563903280}},{\\\"_id\\\":\\\"2gZbq65mRZ3a69ekH\\\",\\\"t\\\":\\\"jitsi_call_started\\\",\\\"rid\\\":\\\"8mRitfQTLqL3kJSunWnirorucaKfJgntam\\\",\\\"ts\\\":{\\\"$date\\\":1634563717032},\\\"msg\\\":\\\"\\\",\\\"u\\\":{\\\"_id\\\":\\\"WnirorucaKfJgntam\\\",\\\"username\\\":\\\"liyi\\\",\\\"name\\\":\\\"李亦\\\"},\\\"groupable\\\":false,\\\"actionLinks\\\":[{\\\"icon\\\":\\\"icon-videocam\\\",\\\"label\\\":\\\"Click to Join!\\\",\\\"i18nLabel\\\":\\\"Click_to_join\\\",\\\"method_id\\\":\\\"joinJitsiCall\\\",\\\"params\\\":\\\"\\\"}],\\\"_updatedAt\\\":{\\\"$date\\\":1634563717032}},{\\\"_id\\\":\\\"pDsMScuLuSN6sqZZQ\\\",\\\"t\\\":\\\"jitsi_call_started\\\",\\\"rid\\\":\\\"8mRitfQTLqL3kJSunWnirorucaKfJgntam\\\",\\\"ts\\\":{\\\"$date\\\":1634561246224},\\\"msg\\\":\\\"\\\",\\\"u\\\":{\\\"_id\\\":\\\"WnirorucaKfJgntam\\\",\\\"username\\\":\\\"liyi\\\",\\\"name\\\":\\\"李亦\\\"},\\\"groupable\\\":false,\\\"actionLinks\\\":[{\\\"icon\\\":\\\"icon-videocam\\\",\\\"label\\\":\\\"Click to Join!\\\",\\\"i18nLabel\\\":\\\"Click_to_join\\\",\\\"method_id\\\":\\\"joinJitsiCall\\\",\\\"params\\\":\\\"\\\"}],\\\"_updatedAt\\\":{\\\"$date\\\":1634561246224}},{\\\"_id\\\":\\\"gXHudTeWjdf6c76q3\\\",\\\"rid\\\":\\\"8mRitfQTLqL3kJSunWnirorucaKfJgntam\\\",\\\"msg\\\":\\\"afda\\\",\\\"ts\\\":{\\\"$date\\\":1634214258985},\\\"u\\\":{\\\"_id\\\":\\\"WnirorucaKfJgntam\\\",\\\"username\\\":\\\"liyi\\\",\\\"name\\\":\\\"李亦\\\"},\\\"urls\\\":[],\\\"mentions\\\":[],\\\"channels\\\":[],\\\"md\\\":[{\\\"type\\\":\\\"PARAGRAPH\\\",\\\"value\\\":[{\\\"type\\\":\\\"PLAIN_TEXT\\\",\\\"value\\\":\\\"afda\\\"}]}],\\\"_updatedAt\\\":{\\\"$date\\\":1634214259015}},{\\\"_id\\\":\\\"cvFpKu6cPeb3NpMks\\\",\\\"rid\\\":\\\"8mRitfQTLqL3kJSunWnirorucaKfJgntam\\\",\\\"msg\\\":\\\"gg\\\",\\\"ts\\\":{\\\"$date\\\":1634201838849},\\\"u\\\":{\\\"_id\\\":\\\"WnirorucaKfJgntam\\\",\\\"username\\\":\\\"liyi\\\",\\\"name\\\":\\\"李亦\\\"},\\\"urls\\\":[],\\\"mentions\\\":[],\\\"channels\\\":[],\\\"md\\\":[{\\\"type\\\":\\\"PARAGRAPH\\\",\\\"value\\\":[{\\\"type\\\":\\\"PLAIN_TEXT\\\",\\\"value\\\":\\\"gg\\\"}]}],\\\"_updatedAt\\\":{\\\"$date\\\":1634201838861}},{\\\"_id\\\":\\\"eHStoLxrzFdZpcice\\\",\\\"rid\\\":\\\"8mRitfQTLqL3kJSunWnirorucaKfJgntam\\\",\\\"msg\\\":\\\"33\\\",\\\"ts\\\":{\\\"$date\\\":1634201607392},\\\"u\\\":{\\\"_id\\\":\\\"WnirorucaKfJgntam\\\",\\\"username\\\":\\\"liyi\\\",\\\"name\\\":\\\"李亦\\\"},\\\"urls\\\":[],\\\"mentions\\\":[],\\\"channels\\\":[],\\\"md\\\":[{\\\"type\\\":\\\"PARAGRAPH\\\",\\\"value\\\":[{\\\"type\\\":\\\"PLAIN_TEXT\\\",\\\"value\\\":\\\"33\\\"}]}],\\\"_updatedAt\\\":{\\\"$date\\\":1634201607402}},{\\\"_id\\\":\\\"fbGzd3JqAyyYFvXC2\\\",\\\"rid\\\":\\\"8mRitfQTLqL3kJSunWnirorucaKfJgntam\\\",\\\"msg\\\":\\\"123\\\",\\\"ts\\\":{\\\"$date\\\":1634201530577},\\\"u\\\":{\\\"_id\\\":\\\"WnirorucaKfJgntam\\\",\\\"username\\\":\\\"liyi\\\",\\\"name\\\":\\\"李亦\\\"},\\\"urls\\\":[],\\\"mentions\\\":[],\\\"channels\\\":[],\\\"md\\\":[{\\\"type\\\":\\\"PARAGRAPH\\\",\\\"value\\\":[{\\\"type\\\":\\\"PLAIN_TEXT\\\",\\\"value\\\":\\\"123\\\"}]}],\\\"_updatedAt\\\":{\\\"$date\\\":1634201530608}}],\\\"unreadNotLoaded\\\":0}}\",\"success\":true}",
-                "True",
-                ""
+                "{\"status\":\"error\",\"message\":\"You must be logged in to do this.\"}\nNone\n",
+                "Traceback (most recent call last):\n",
+                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"E:\\work_soft\\PyCharm\\PyCharm Community Edition 2017.2.4\\project\\wangguan\\wg_requests\\case_unittest\\test_case_by_json.py\", line 109, in test_seconds\n    self.assertEqual(True, final, '不通过')\n",
+                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: True != False : 不通过\n"
             ]
         },
         {
             "className": "TestMathFunc_two",
             "methodName": "test_third",
             "description": null,
-            "spendTime": "0.078 s",
-            "status": "成功",
+            "spendTime": "0.602 s",
+            "status": "失败",
             "log": [
-                "{\"message\":\"{\\\"msg\\\":\\\"result\\\",\\\"id\\\":\\\"50\\\",\\\"result\\\":{\\\"message\\\":{\\\"docs\\\":[{\\\"_id\\\":\\\"hAKohLDu9hPvEBN4y\\\",\\\"rid\\\":\\\"GENERAL\\\",\\\"msg\\\":\\\"发生的\\\",\\\"ts\\\":{\\\"$date\\\":1634266225279},\\\"u\\\":{\\\"_id\\\":\\\"WnirorucaKfJgntam\\\",\\\"username\\\":\\\"liyi\\\",\\\"name\\\":\\\"李亦\\\"},\\\"urls\\\":[],\\\"mentions\\\":[],\\\"channels\\\":[],\\\"md\\\":[{\\\"type\\\":\\\"PARAGRAPH\\\",\\\"value\\\":[{\\\"type\\\":\\\"PLAIN_TEXT\\\",\\\"value\\\":\\\"发生的\\\"}]}],\\\"_updatedAt\\\":{\\\"$date\\\":1634266225310},\\\"score\\\":1.1,\\\"r\\\":{\\\"name\\\":\\\"public\\\",\\\"t\\\":\\\"c\\\"},\\\"valid\\\":true}]}}}\",\"success\":true}",
-                "True",
-                ""
+                "{\"status\":\"error\",\"message\":\"You must be logged in to do this.\"}\nNone\n",
+                "Traceback (most recent call last):\n",
+                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"E:\\work_soft\\PyCharm\\PyCharm Community Edition 2017.2.4\\project\\wangguan\\wg_requests\\case_unittest\\test_case_by_json.py\", line 129, in test_third\n    self.assertEqual(True, final, '不通过')\n",
+                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: True != False : 不通过\n"
             ]
         }
     ],
     "testName": "接口测试报告",
-    "testAll": 4,
-    "testFail": 1,
-    "beginTime": "2021-11-05 15:43:35",
-    "totalTime": "0s",
+    "testAll": 5,
+    "testFail": 4,
+    "beginTime": "2021-11-18 16:32:55",
+    "totalTime": "3s",
     "testSkip": 0,
     "testError": 0
 };

@@ -4,11 +4,22 @@ Created on 2019-12-10
 @author: Zio
 '''
 import unittest
+# import sys
+# sys.path.append(r'C:\work_soft\PyCharm\PycharmProjects\request\untitled')
+# import os
+
 import sys
-sys.path.append(r'C:\work_soft\PyCharm\PycharmProjects\request\untitled')
+import os
+curPath = os.path.abspath(os.path.dirname(__file__)) #获取当前绝对路径
+filePath = os.path.split(curPath)[0] #获取当前目录的上一级目录路径，将文件名和路径切割，然后只取路径
+sys.path.append(curPath.split('xxxx')[0])#以xxxx来分割，且只取第一个，并把它追加到python系统模块中
+rootPath = curPath.split('xxxx')[0]+"xxxx"#按xxxx分割后，取第一个后，在接上xxxx
+sys.path.append(filePath)#sys.path是python的搜索模块的路径集
+sys.path.append(rootPath)
+
 from core.common import Common
 from param.param_openpyxl import ParamFactory
-import os
+
 
 import json
 
