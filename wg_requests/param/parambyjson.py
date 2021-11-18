@@ -26,8 +26,8 @@ class OperationJson:
         if file_name:
             self.file_name=file_name
         else:
-            self.file_name=filePath+'\\param\\api_interface_file\\main_s.json'
-            # print(self.file_name)
+            self.file_name=filePath+r'\param\api_interface_file\main_s.json'
+            print(self.file_name)
         self.data = self.get_data()
 
     # 打开json文件，要加编码规则utf-8
