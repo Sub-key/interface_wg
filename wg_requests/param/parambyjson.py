@@ -38,7 +38,7 @@ class OperationJson:
         if file_name:
             self.file_name=file_name
         else:
-            self.file_name=rootpath+'\main_s.json'
+            self.file_name=rootpath+'/main_s.json'
             print(self.file_name)
         self.data = self.get_data()
 
