@@ -20,6 +20,7 @@ sys.path.append(rootPath)
 from core.common import Common
 from param.param_openpyxl import ParamFactory
 from param.parambyjson import OperationJson
+from case_unittest.login import TestMathFunc_one
 
 import time
 import datetime
@@ -57,6 +58,9 @@ import json
         #     i = i + 1
         # print(response_result)
         # print(exp_list)
+
+# 设置一个全局变量
+token=TestMathFunc_one().test_one()
 
 
 class TestMathFunc_two(unittest.TestCase):
@@ -101,13 +105,13 @@ class TestMathFunc_two(unittest.TestCase):
 
     def test_seconds(self):
         top = OperationJson().get_value('loadHistory')
-        payload_messages = top.get('payload')
-        headers_messages = top.get('headers')
+        payload = top.get('payload')
+        headers = top.get('headers')
+        headers.update(token)
+        print(headers)
         # 路由
         uri = '/api/v1/method.call/loadHistory'
         comm = Common('http://192.168.72.235', api_type='http')
-        payload = payload_messages
-        headers = headers_messages
         response_selectEq = comm.post(uri, params=payload, headers=headers)
         response_result = response_selectEq.text
         result = str(json.loads(response_selectEq.text).get('success'))
@@ -121,13 +125,12 @@ class TestMathFunc_two(unittest.TestCase):
 
     def test_third(self):
         top = OperationJson().get_value('search')
-        payload_messages = top.get('payload')
-        headers_messages = top.get('headers')
+        payload = top.get('payload')
+        headers = top.get('headers')
+        headers.update(token)
         # 路由
         uri = '/api/v1/method.call/rocketchatSearch.search'
         comm = Common('http://192.168.72.235', api_type='http')
-        payload = payload_messages
-        headers = headers_messages
         response_selectEq = comm.post(uri, params=payload, headers=headers)
         response_result = response_selectEq.text
         result = str(json.loads(response_selectEq.text).get('success'))
@@ -149,13 +152,14 @@ class TestMathFunc_two(unittest.TestCase):
         # 传入参数给change_value()
         opjson.change_value(data)
         top = OperationJson().get_value('sendMessage')
-        payload_messages = top.get('payload')
-        headers_messages = top.get('headers')
+        payload = top.get('payload')
+        headers = top.get('headers')
+        headers.update(token)
         # 路由
         uri = '/api/v1/method.call/sendMessage'
         comm = Common('http://192.168.72.235', api_type='http')
-        payload = payload_messages
-        headers = headers_messages
+
+
         response_selectEq = comm.post(uri, params=payload, headers=headers)
         response_result = response_selectEq.text
         result = str(json.loads(response_selectEq.text).get('success'))
@@ -170,14 +174,13 @@ class TestMathFunc_two(unittest.TestCase):
 
     def test_five(self):
         top = OperationJson().get_value('sendMessage_image')
-        payload_messages = top.get('payload')
-        headers_messages = top.get('headers')
+        payload = top.get('payload')
+        headers = top.get('headers')
+        headers.update(token)
         # 路由
         uri = '/api/v1/rooms.upload/GENERAL'
         comm = Common('http://192.168.72.235', api_type='http')
-        payload = payload_messages
         print(payload)
-        headers = headers_messages
         response_selectEq = comm.post(uri, params=payload, headers=headers)
         response_result = response_selectEq.text
 

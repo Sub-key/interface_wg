@@ -1,7 +1,9 @@
 {
     "login": {
         "url": "http://192.168.72.235/api/v1/method.callAnon/login",
-        "payload": "{\"message\":\"{\\\"msg\\\":\\\"method\\\",\\\"id\\\":\\\"19\\\",\\\"method\\\":\\\"login\\\",\\\"params\\\":[{\\\"user\\\":{\\\"username\\\":\\\"yangzijian\\\"},\\\"password\\\":{\\\"digest\\\":\\\"312433c28349f63c4f387953ff337046e794bea0f9b9ebfcb08e90046ded9c76\\\",\\\"algorithm\\\":\\\"sha-256\\\"}}]}\"}",
+        "payload": {
+            "message": "{\"msg\":\"method\",\"id\":\"20\",\"method\":\"login\",\"params\":[{\"user\":{\"username\":\"liyi\"},\"password\":{\"digest\":\"e1cca85c97a6de76dae6293f2597977afa032dfe4c6182524ead31a221684516\",\"algorithm\":\"sha-256\"}}]}"
+        },
         "headers": {
             "Content-Type": "application/json",
             "cache-contro": "no-cache",
@@ -13,8 +15,6 @@
         "payload": "{\"message\":\"{\\\"msg\\\":\\\"method\\\",\\\"id\\\":\\\"36\\\",\\\"method\\\":\\\"loadHistory\\\",\\\"params\\\":[\\\"8mRitfQTLqL3kJSunWnirorucaKfJgntam\\\",null,50,{\\\"$date\\\":1634605172011},false]}\"}",
         "headers": {
             "Content-Type": "application/json",
-            "Cookie": "rc_uid=WnirorucaKfJgntam; rc_token=kuKIB-X_w0kmTC_XbQkit0xS3UBu-KRD3NVHlLJavP0",
-            "X-Auth-Token": "kuKIB-X_w0kmTC_XbQkit0xS3UBu-KRD3NVHlLJavP0",
             "X-Requested-With": "XMLHttpRequest",
             "X-User-Id": "WnirorucaKfJgntam",
             "cache-control": "no-cache",
@@ -26,7 +26,6 @@
         "payload": "{\"message\":\"{\\\"msg\\\":\\\"method\\\",\\\"id\\\":\\\"50\\\",\\\"method\\\":\\\"rocketchatSearch.search\\\",\\\"params\\\":[\\\"发生的\\\",{\\\"rid\\\":\\\"GENERAL\\\",\\\"uid\\\":\\\"WnirorucaKfJgntam\\\"},{\\\"searchAll\\\":false}]}\"}",
         "headers": {
             "Content-Type": "application/json",
-            "X-Auth-Token": "kuKIB-X_w0kmTC_XbQkit0xS3UBu-KRD3NVHlLJavP0",
             "X-Requested-With": "XMLHttpRequest",
             "X-User-Id": "WnirorucaKfJgntam",
             "cache-control": "no-cache",
@@ -35,10 +34,9 @@
     },
     "sendMessage": {
         "url": "http://192.168.72.235/api/v1/method.call/sendMessage",
-        "payload": "{\"message\":\"{\\\"msg\\\":\\\"method\\\",\\\"id\\\":\\\"88\\\",\\\"method\\\":\\\"sendMessage\\\",\\\"params\\\":[{\\\"_id\\\":\\\"20211118173352\\\",\\\"rid\\\":\\\"WnirorucaKfJgntampYhsRfC4rwWT68axS\\\",\\\"msg\\\":\\\"测试1996\\\"}]}\"}",
+        "payload": "{\"message\":\"{\\\"msg\\\":\\\"method\\\",\\\"id\\\":\\\"88\\\",\\\"method\\\":\\\"sendMessage\\\",\\\"params\\\":[{\\\"_id\\\":\\\"20211123173754\\\",\\\"rid\\\":\\\"WnirorucaKfJgntampYhsRfC4rwWT68axS\\\",\\\"msg\\\":\\\"测试1996\\\"}]}\"}",
         "headers": {
             "Content-Type": "application/json",
-            "X-Auth-Token": "kuKIB-X_w0kmTC_XbQkit0xS3UBu-KRD3NVHlLJavP0",
             "X-Requested-With": "XMLHttpRequest",
             "X-User-Id": "WnirorucaKfJgntam",
             "cache-control": "no-cache",
@@ -50,7 +48,6 @@
         "payload": "------WebKitFormBoundarycBDKhvWzfs6vxeFF\r\nContent-Disposition: form-data; name=\"description\"\r\n\r\nCES\r\n------WebKitFormBoundarycBDKhvWzfs6vxeFF\r\nContent-Disposition: form-data; name=\"file\"; filename=\"E:\\work_soft\\PyCharm\\PyCharm Community Edition 2017.2.4\\project\\wangguan\\wg_requests\\1.png\"\r\nContent-Type: image/png\r\n\r\n\r\n------WebKitFormBoundarycBDKhvWzfs6vxeFF--",
         "headers": {
             "Content-type": "multipart/form-data;boundary=----WebKitFormBoundarycBDKhvWzfs6vxeFF",
-            "X-Auth-Token": "kuKIB-X_w0kmTC_XbQkit0xS3UBu-KRD3NVHlLJavP0",
             "X-Requested-With": "XMLHttpRequest",
             "X-User-Id": "WnirorucaKfJgntam",
             "cache-control": "no-cache",
